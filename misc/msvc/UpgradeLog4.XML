@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ioq3-urt 2008">
+</Property><Property Name="Solution File" Value="C:\msys\1.0\home\thinker\ioq3-urt-git\ioq3-urt\misc\msvc\ioq3-urt 2008.sln">
+</Property><Property Name="Date" Value="Δευτέρα, 28 Ιουνίου 2010">
+</Property><Property Name="Time" Value="14:01 μμ">
+</Property><Property Name="Log Number" Value="4">
+</Property></Properties><Event ErrorLevel="0" Project="cgame" Source="cgame.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="cgame" Source="cgame.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="game" Source="game.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="game" Source="game.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="q3_ui" Source="q3_ui.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="q3_ui" Source="q3_ui.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="quake3" Source="quake3.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="quake3" Source="quake3.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ui" Source="ui.vcproj" Description="Project upgraded successfully.">
+</Event><Event ErrorLevel="3" Project="ui" Source="ui.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ioq3-urt 2008.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ioq3-urt 2008.sln" Description="Converted">
+</Event></UpgradeLog>

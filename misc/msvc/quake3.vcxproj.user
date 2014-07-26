@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+    <LocalDebuggerCommandArguments Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">+set fs_homepath E:\games\UrbanTerror\tmp+set fs_basepath E:\games\UrbanTerror +set r_gamma 1  +set name test +exec binds.cfg +set r_mode -1 +set r_fullscreen 0 +set r_customwidth 1080 +set r_customheight 750</LocalDebuggerCommandArguments>
+    <DebuggerFlavor Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)ioquake3.exe</LocalDebuggerCommand>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">E:\games\UrbanTerror </LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerWorkingDirectory Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\games\UrbanTerror</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommand Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)ioquake3.exe</LocalDebuggerCommand>
+    <LocalDebuggerCommandArguments Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">+set fs_homepath E:\games\UrbanTerror\tmp+set fs_basepath E:\games\UrbanTerror +set r_gamma 1 +set r_mode 5 +set r_fullscreen 0  +set name test +exec binds.cfg  +set s_musicvolume 0.01 +set g_gametype 8 +devmap ut4_dressingroom</LocalDebuggerCommandArguments>
+  </PropertyGroup>
+</Project>

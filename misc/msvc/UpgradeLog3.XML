@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ioq3">
+</Property><Property Name="Solution File" Value="C:\msys\1.0\home\thinker\ioq3-urt\misc\msvc\ioq3.sln">
+</Property><Property Name="Date" Value="21 December 2009">
+</Property><Property Name="Time" Value="19:52">
+</Property><Property Name="Log Number" Value="3">
+</Property></Properties><Event ErrorLevel="3" Project="cgame" Source="cgame.vcproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="3" Project="game" Source="game.vcproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="3" Project="q3_ui" Source="q3_ui.vcproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="3" Project="quake3" Source="quake3.vcproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="3" Project="ui" Source="ui.vcproj" Description="No Conversion Required">
+</Event><Event ErrorLevel="0" Project="" Source="ioq3.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ioq3.sln" Description="Converted">
+</Event></UpgradeLog>

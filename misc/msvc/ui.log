@@ -1,0 +1,16 @@
+﻿Build started 7/4/2010 1:15:11 μμ.
+     1>Project "C:\msys\1.0\home\thinker\ioq3-urt-git\ioq3-urt\misc\msvc\ui.vcxproj" on node 21 (build target(s)).
+     1>_PrepareForBuild:
+         Creating directory "..\..\build\ui_release\".
+         Creating "..\..\build\ui_release\_ui.unsuccessfulbuild" because "AlwaysCreate" was specified.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(935,5): warning MSB8012: TargetPath(C:\msys\1.0\home\thinker\ioq3-urt-git\ioq3-urt\misc\msvc\..\..\build\ui_release\_ui.dll) does not match the Linker's OutputFile property value (). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(936,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(937,5): warning MSB8012: TargetName(_ui) does not match the Linker's OutputFile property value (). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       _AfterBuild:
+         Deleting file "..\..\build\ui_release\_ui.unsuccessfulbuild".
+         Touching "..\..\build\ui_release\_ui.lastbuildstate".
+     1>Done Building Project "C:\msys\1.0\home\thinker\ioq3-urt-git\ioq3-urt\misc\msvc\ui.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.07

@@ -1,0 +1,286 @@
+--- misc/msvc/quake3.vcproj	2010-07-22 06:20:51 +0300
++++ misc/msvc/quake3.vcproj	2010-06-28 14:52:11 +0300
+@@ -1,9 +1,11 @@
+ <?xml version="1.0" encoding="Windows-1252"?>
+ <VisualStudioProject
+ 	ProjectType="Visual C++"
+-	Version="8.00"
++	Version="9,00"
+ 	Name="quake3"
+ 	ProjectGUID="{81CB51C4-B434-4E12-B69B-BAEE102F2852}"
++	RootNamespace="quake3"
++	TargetFrameworkVersion="131072"
+ 	>
+ 	<Platforms>
+ 		<Platform
+@@ -83,6 +85,8 @@
+ 				MapFileName="$(IntDir)\quake3.map"
+ 				SubSystem="2"
+ 				StackReserveSize="8388608"
++				RandomizedBaseAddress="1"
++				DataExecutionPrevention="0"
+ 				TargetMachine="1"
+ 			/>
+ 			<Tool
+@@ -104,9 +108,6 @@
+ 				Name="VCAppVerifierTool"
+ 			/>
+ 			<Tool
+-				Name="VCWebDeploymentTool"
+-			/>
+-			<Tool
+ 				Name="VCPostBuildEventTool"
+ 				Description="Post build processing.."
+ 				CommandLine="rem bash -c &quot;perl ./unix/cons -- release-TA&quot;"
+@@ -184,6 +185,8 @@
+ 				MapFileName="$(IntDir)\quake3.map"
+ 				SubSystem="2"
+ 				StackReserveSize="8388608"
++				RandomizedBaseAddress="1"
++				DataExecutionPrevention="0"
+ 				TargetMachine="1"
+ 			/>
+ 			<Tool
+@@ -205,9 +208,6 @@
+ 				Name="VCAppVerifierTool"
+ 			/>
+ 			<Tool
+-				Name="VCWebDeploymentTool"
+-			/>
+-			<Tool
+ 				Name="VCPostBuildEventTool"
+ 				Description="Post build processing.."
+ 				CommandLine="rem bash -c &quot;perl ./unix/cons -- debug&quot;"
+@@ -246,11 +246,16 @@
+ 				Name="VCCLCompilerTool"
+ 				Optimization="2"
+ 				InlineFunctionExpansion="2"
++				EnableIntrinsicFunctions="true"
++				FavorSizeOrSpeed="1"
++				OmitFramePointers="true"
++				EnableFiberSafeOptimizations="true"
+ 				AdditionalIncludeDirectories="..\..\code\SDL12\include; ..\..\code\libcurl; ..\..\code\AL; ..\..\code\libspeex\include; ..\..\code\zlib"
+-				PreprocessorDefinitions="_WIN32; WIN32; NDEBUG; _WINDOWS; _CRT_SECURE_NO_DEPRECATE; BOTLIB; USE_ICON; USE_CURL; USE_CURL_DLOPEN; USE_OPENAL; USE_OPENAL_DLOPEN; USE_VOIP; HAVE_CONFIG_H"
++				PreprocessorDefinitions="USE_LOCAL_HEADERS;STANDALONE;_WIN32; WIN32; NDEBUG; _WINDOWS; _CRT_SECURE_NO_DEPRECATE; BOTLIB; USE_ICON; USE_CURL; USE_CURL_DLOPEN; USE_OPENAL; USE_OPENAL_DLOPEN; HAVE_CONFIG_H"
+ 				StringPooling="true"
+-				RuntimeLibrary="0"
++				RuntimeLibrary="2"
+ 				EnableFunctionLevelLinking="true"
++				EnableEnhancedInstructionSet="2"
+ 				UsePrecompiledHeader="0"
+ 				PrecompiledHeaderFile="$(IntDir)\quake3.pch"
+ 				AssemblerListingLocation="$(IntDir)\"
+@@ -273,16 +278,20 @@
+ 			/>
+ 			<Tool
+ 				Name="VCLinkerTool"
+-				AdditionalDependencies="user32.lib advapi32.lib winmm.lib wsock32.lib ws2_32.lib SDLmain.lib SDL.lib OpenGL32.lib msvcrt.lib"
++				AdditionalDependencies="psapi.lib  user32.lib advapi32.lib winmm.lib wsock3*2.lib ws2_32.lib SDLmain.lib SDL.lib OpenGL32.lib  msvcrt.lib"
+ 				OutputFile="$(OutDir)\ioquake3.exe"
+ 				LinkIncremental="1"
+ 				SuppressStartupBanner="true"
++				IgnoreAllDefaultLibraries="false"
++				IgnoreDefaultLibraryNames=""
+ 				GenerateDebugInformation="false"
+ 				ProgramDatabaseFile="$(IntDir)\quake3.pdb"
+ 				GenerateMapFile="true"
+ 				MapFileName="$(IntDir)\quake3.map"
+ 				SubSystem="2"
+ 				StackReserveSize="8388608"
++				RandomizedBaseAddress="1"
++				DataExecutionPrevention="0"
+ 				TargetMachine="1"
+ 			/>
+ 			<Tool
+@@ -304,9 +313,6 @@
+ 				Name="VCAppVerifierTool"
+ 			/>
+ 			<Tool
+-				Name="VCWebDeploymentTool"
+-			/>
+-			<Tool
+ 				Name="VCPostBuildEventTool"
+ 			/>
+ 		</Configuration>
+@@ -381,6 +387,8 @@
+ 				MapFileName="$(IntDir)\quake3.map"
+ 				SubSystem="2"
+ 				StackReserveSize="8388608"
++				RandomizedBaseAddress="1"
++				DataExecutionPrevention="0"
+ 				TargetMachine="1"
+ 			/>
+ 			<Tool
+@@ -402,9 +410,6 @@
+ 				Name="VCAppVerifierTool"
+ 			/>
+ 			<Tool
+-				Name="VCWebDeploymentTool"
+-			/>
+-			<Tool
+ 				Name="VCPostBuildEventTool"
+ 				Description="Post build processing.."
+ 				CommandLine="rem bash -c &quot;perl ./unix/cons -- debug-TA&quot;"
+@@ -1295,6 +1300,53 @@
+ 				</FileConfiguration>
+ 			</File>
+ 			<File
++				RelativePath="..\..\code\qcommon\ioapi.c"
++				>
++				<FileConfiguration
++					Name="Release TA|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						Optimization="2"
++						PreprocessorDefinitions=""
++						BrowseInformation="1"
++					/>
++				</FileConfiguration>
++				<FileConfiguration
++					Name="Debug|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						Optimization="0"
++						PreprocessorDefinitions=""
++						BrowseInformation="1"
++					/>
++				</FileConfiguration>
++				<FileConfiguration
++					Name="Release|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						Optimization="2"
++						PreprocessorDefinitions=""
++					/>
++				</FileConfiguration>
++				<FileConfiguration
++					Name="Debug TA|Win32"
++					>
++					<Tool
++						Name="VCCLCompilerTool"
++						Optimization="0"
++						PreprocessorDefinitions=""
++						BrowseInformation="1"
++					/>
++				</FileConfiguration>
++			</File>
++			<File
++				RelativePath="..\..\code\client\ioq3-urt.c"
++				>
++			</File>
++			<File
+ 				RelativePath="..\..\code\qcommon\md4.c"
+ 				>
+ 				<FileConfiguration
+@@ -1487,6 +1539,10 @@
+ 				>
+ 			</File>
+ 			<File
++				RelativePath="..\..\code\client\sam.c"
++				>
++			</File>
++			<File
+ 				RelativePath="..\..\code\sdl\sdl_gamma.c"
+ 				>
+ 			</File>
+@@ -2176,49 +2232,6 @@
+ 				</FileConfiguration>
+ 			</File>
+ 			<File
+-				RelativePath="..\..\code\qcommon\ioapi.c"
+-				>
+-				<FileConfiguration
+-					Name="Release TA|Win32"
+-					>
+-					<Tool
+-						Name="VCCLCompilerTool"
+-						Optimization="2"
+-						PreprocessorDefinitions=""
+-						BrowseInformation="1"
+-					/>
+-				</FileConfiguration>
+-				<FileConfiguration
+-					Name="Debug|Win32"
+-					>
+-					<Tool
+-						Name="VCCLCompilerTool"
+-						Optimization="0"
+-						PreprocessorDefinitions=""
+-						BrowseInformation="1"
+-					/>
+-				</FileConfiguration>
+-				<FileConfiguration
+-					Name="Release|Win32"
+-					>
+-					<Tool
+-						Name="VCCLCompilerTool"
+-						Optimization="2"
+-						PreprocessorDefinitions=""
+-					/>
+-				</FileConfiguration>
+-				<FileConfiguration
+-					Name="Debug TA|Win32"
+-					>
+-					<Tool
+-						Name="VCCLCompilerTool"
+-						Optimization="0"
+-						PreprocessorDefinitions=""
+-						BrowseInformation="1"
+-					/>
+-				</FileConfiguration>
+-			</File>
+-			<File
+ 				RelativePath="..\..\code\qcommon\vm.c"
+ 				>
+ 				<FileConfiguration
+@@ -2389,6 +2402,10 @@
+ 				>
+ 			</File>
+ 			<File
++				RelativePath="..\..\code\client\ioq3-urt.h"
++				>
++			</File>
++			<File
+ 				RelativePath="..\..\code\ui\keycodes.h"
+ 				>
+ 			</File>
+@@ -2397,6 +2414,10 @@
+ 				>
+ 			</File>
+ 			<File
++				RelativePath="..\..\code\client\msvc08_stdint.h"
++				>
++			</File>
++			<File
+ 				RelativePath="..\..\code\qcommon\puff.h"
+ 				>
+ 			</File>
+@@ -2425,6 +2446,14 @@
+ 				>
+ 			</File>
+ 			<File
++				RelativePath="..\..\code\client\sam.h"
++				>
++			</File>
++			<File
++				RelativePath="..\..\code\client\sam_lib.h"
++				>
++			</File>
++			<File
+ 				RelativePath="..\..\code\server\server.h"
+ 				>
+ 			</File>
+@@ -2937,6 +2966,10 @@
+ 					>
+ 				</File>
+ 				<File
++					RelativePath="..\..\code\renderer\tr_frag.c"
++					>
++				</File>
++				<File
+ 					RelativePath="..\..\code\renderer\tr_image.c"
+ 					>
+ 				</File>

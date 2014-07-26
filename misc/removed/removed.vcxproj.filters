@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="speex">
+      <UniqueIdentifier>{cdbd6211-24e9-4e6a-998f-e495dd371985}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\libspeex\bits.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\buffer.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\cb_search.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\exc_10_16_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\exc_10_32_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\exc_20_32_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\exc_5_256_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\exc_5_64_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\exc_8_128_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\fftwrap.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\filterbank.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\filters.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\gain_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\gain_table_lbr.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\hexc_10_32_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\hexc_table.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\high_lsp_tables.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\jitter.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\kiss_fft.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\kiss_fftr.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\lpc.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\lsp.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\lsp_tables_nb.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\ltp.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\mdf.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\modes.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\modes_wb.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\nb_celp.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\preprocess.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\quant_lsp.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\resample.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\sb_celp.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\smallft.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\speex.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\speex_callbacks.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\speex_header.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\stereo.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\vbr.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\vq.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\libspeex\window.c">
+      <Filter>speex</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\libspeex\config.h">
+      <Filter>speex</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
